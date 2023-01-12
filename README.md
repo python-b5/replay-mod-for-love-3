@@ -38,16 +38,16 @@ The first five lines are metadata that specifies the options selected when the r
         - `love123remastered`
         - `<3`
         - `endless`
-- **Line 4:** Whether mirrored mode is active. This must be `true` or `false`. Mirrored mode is purely cosmetic, but is supported since it likely affects run times. If this is `true` and the gamemode `endless`, the first level will always be flipped regardless of the random seed (this is a quirk of the vanilla game as well).
+- **Line 4:** Whether mirror mode is active. This must be `true` or `false`. Mirror mode is purely cosmetic, but is supported since runs using it will likely be slower. If this is `true` and the gamemode `endless`, the first level will always be flipped regardless of the random seed (this is a quirk of the vanilla game as well).
 - **Line 5:** The random seed. This must be an integer. This is used to ensure death animations remain constant; if this is not set to the same seed that was used when recording the replay, deaths will cause a desync. On endless mode, this will determine the level order and whether the first level is mirrored.
 
 Everything except the random seed is shown in the replays menu.
 
 The remaining lines are the replay itself. Each line is a single frame, and contains 8 0s/1s (one for each input; 0 means unpressed and 1 means pressed). If a line does not follow this format, it will be skipped over. They are in the following order (down and pause are left out since they are not used in gameplay):
 
-1. left
-2. right
-3. up
+1. up
+2. left
+3. right
 4. jump
 5. checkpoint
 6. suicide
