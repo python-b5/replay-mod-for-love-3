@@ -8,9 +8,10 @@ This mod adds replays (sometimes known as "demos") to LOVE 3. They are recorded 
 
 Downloads can be found in the Releases tab, and are labeled with the LOVE 3 version they support.
 
-The mod will be updated as soon as possible after new updates come out (though since it does take time to update a mod, the length of which can vary depending on whether the new LOVE 3 version created any conflicts, it may take a couple days to do so). Each version of the mod only works with one specific version of LOVE 3.
 
-To install, download this repository as a `.zip` file, extract it, and copy the files from the included `mod` folder to your base LOVE 3 install directory. Then run `install.bat`, and the mod will be installed. The original `data.win` file will be saved as `vanilla.win`, to allow for easy uninstallation (just delete `data.win` and rename the backup file).
+To install, download the source code from a release that supports the LOVE 3 version you want, extract the `.zip` file, and copy the files from the included `mod` folder to your base LOVE 3 install directory. Then run `install.bat`, and the mod will be installed. The original `data.win` file will be saved as `vanilla.win`, to allow for easy uninstallation (just delete `data.win` and rename the backup file).
+
+The mod will be updated as soon as possible after new updates come out (though since it does take time to update a mod, the length of which can vary depending on whether the new LOVE 3 version created any conflicts, it may take a couple days to do so). Each version of the mod only works with one specific version of LOVE 3.
 
 ## Replay file format
 
