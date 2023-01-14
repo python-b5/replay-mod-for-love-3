@@ -16,7 +16,7 @@ The mod will be updated as soon as possible after new updates come out (though s
 
 The first five lines are metadata that specifies the options selected when the run was recorded. If these lines do not follow this format, the replay will not appear in the replays menu. They are as follows:
 
-- **Line 1:** The date the replay was created, in the format `YYYY-MM-DD`. This doesn't do anything except get displayed in the replays menu. Technically, it doesn't even *have* to be a date; that's just what it is in replays recorded in-game.
+- **Line 1:** The date the replay was created, in the format `YYYY-MM-DD`. This doesn't do anything except get displayed in the replays menu. Technically, it doesn't even *have* to be a date; that's just what it is in replays recorded in-game. Time isn't stored here since it would make the first line in the replays menu too long.
 - **Line 2:** The gamemode being played. It must be one of:
     - `unlimited`
     - `arcade`
@@ -57,4 +57,4 @@ The remaining lines are the replay itself. Each line is a single frame, and cont
 7. reset checkpoint
 8. slow motion
 
-Replays recorded in-game are saved with the format `<date> (<n>).txt`, where `date` is the current date and `n` is a number that starts at `1` and increases with each additional replay recorded on `date`, and are stored in the folder `%localappdata%/LOVE3/replays`. They are displayed in-game in reverse alphabetical order (such that with the default naming scheme, the most recent replays will be at the top of the list).
+Replays recorded in-game are saved with the format `<date> <time>.txt`, where `date` is the current date in the format `YYYY-MM-DD` and `time` is the current time in the format `HH-MM-SS`. They are saved in the folder `%localappdata%/LOVE3/replays`, and are displayed in-game in reverse alphabetical order (such that with the default naming scheme, the most recent replays will be at the top of the list).
