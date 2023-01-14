@@ -23,9 +23,8 @@ The first five lines are metadata that specifies the options selected when the r
     - `arcade`
     - `yolo`
     - `speedrun`
-    - `single`
-        - This gamemode can take arguments; `yolo` and `speedrun` can be appended to the line to enable those modes respectively (for example, `single yolo speedrun` would enable both). The order doesn't matter.
-    - `custom`
+    - `single` + `custom`
+        - These gamemodes can take arguments; `yolo` and `speedrun` can be appended to the line to enable those modes respectively (for example, `single yolo speedrun` would enable both). The order doesn't matter.
 - **Line 3:** The content being played. Depending on the gamemode, this line will be:
     - **If the gamemode is `single`:** The room name of the level being played.
     - **If the gamemode is `custom`:** The folder name of the custom level being played.
@@ -40,8 +39,13 @@ The first five lines are metadata that specifies the options selected when the r
         - `endless`
 - **Line 4:** Whether mirror mode is active. This must be `true` or `false`. Mirror mode is purely cosmetic, but is supported since runs using it will likely be slower. If this is `true` and the gamemode `endless`, the first level will always be flipped regardless of the random seed (this is a quirk of the vanilla game as well).
 - **Line 5:** The random seed. This must be an integer. This is used to ensure death animations remain constant; if this is not set to the same seed that was used when recording the replay, deaths will cause a desync. On endless mode, this will determine the level order and whether the first level is mirrored.
+- **Line 6:** The spriteset (or selected character). It must be one of:
+    - `fiveEight`
+    - The method to access the character select hasn't been revealed yet! The other options are a secret for now...
+- **Line 7:** The trace flag. It must be an integer between `0` and `18`.
+- **Line 8:** The trace flag's length. It must be an integer between `1` and `58`.
 
-Everything except the random seed is shown in the replays menu.
+Only the information contained in the first four lines is displayed in the replays menu.
 
 The remaining lines are the replay itself. Each line is a single frame, and contains 8 0s/1s (one for each input; 0 means unpressed and 1 means pressed). If a line does not follow this format, it will be skipped over. They are in the following order (down and pause are left out since they are not used in gameplay):
 
