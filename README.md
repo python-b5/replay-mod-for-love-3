@@ -4,7 +4,7 @@ This mod adds replays (sometimes known as "demos") to LOVE 3. They are recorded 
 
 ## Installation
 
-**Highest currently supported LOVE 3 version**: `1.3.1.10`
+**Highest currently supported LOVE 3 version**: `1.3.1.11`
 
 Downloads can be found in the Releases tab, and are labeled with the LOVE 3 version they support.
 
