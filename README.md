@@ -16,7 +16,7 @@ The mod will be updated as soon as possible after new updates come out (though s
 
 The first five lines are metadata that specifies the options selected when the run was recorded. If these lines do not follow this format, the replay will not appear in the replays menu. They are as follows:
 
-- **Line 1:** The date the replay was created, in the format `YYYY-MM-DD`. This doesn't do anything except get displayed in the replays menu. Technically, it doesn't even *have* to be a date; that's just what it is in replays recorded in-game. Time isn't stored here since it would make the first line in the replays menu too long.
+- **Line 1:** The date and time the replay was created, in the format `YYYY-MM-DD HH:MM:SS`. This doesn't do anything except get displayed in the replays menu. Technically, it doesn't even *have* to be a timestamp; that's just what it is in replays recorded in-game. Time isn't stored here since it would make the first line in the replays menu too long.
 - **Line 2:** The gamemode being played. It must be one of:
     - `unlimited`
     - `arcade`
