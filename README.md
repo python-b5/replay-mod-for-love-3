@@ -4,7 +4,7 @@ This mod adds replays (sometimes known as "demos") to LOVE 3. They are recorded 
 
 ## Installation
 
-**Highest currently supported LOVE 3 version**: `1.3.1.12`
+**Highest currently supported LOVE 3 version**: `1.3.1.14`
 
 Downloads can be found in the Releases tab, and are labeled with the LOVE 3 version they support.
 
@@ -53,7 +53,7 @@ The remaining lines are the replay itself. Each line is a single frame, and cont
 3. right
 4. jump
 5. checkpoint
-6. suicide
+6. die
 7. reset checkpoint
 8. slow motion
 
