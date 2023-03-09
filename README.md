@@ -57,4 +57,4 @@ The remaining lines are the replay itself. Each line is a single frame, and cont
 7. reset checkpoint
 8. slow motion
 
-Replays recorded in-game are saved with the format `<date> <time>.txt`, where `date` is the current date in the format `YYYY-MM-DD` and `time` is the current time in the format `HH-MM-SS`. They are saved in the folder `%localappdata%/LOVE3/replays`, and are displayed in-game in reverse alphabetical order (such that with the default naming scheme, the most recent replays will be at the top of the list).
+Replays recorded in-game are saved with the format `<date> <time>.txt`, where `date` is the current date in the format `YYYY-MM-DD` and `time` is the current time in the format `HH-MM-SS`. They are saved in the folder `%localappdata%/LOVE3/replays`, and are displayed in-game with the most recent replays at the top of the list.
